@@ -19,4 +19,4 @@ function factorial (n) {
         return n;
     }
 };
- console.log (factorial (7));
+ console.log (factorial (6));
