@@ -1,78 +1,85 @@
 
 
-const employeers = [
-    {
+// const employeers = [
+//     {
         
-        id: 0,
-        name: "YarikHead",
-        dept_unit_id: 0,
-        tel: "123-123-3", 
-        salary: 3000
-    },
-    {
-        id: 1,
-        name: "MashaLead",
-        dept_unit_id: 1,
-        tel: "123-123-3", 
-        salary: 2000
-    },
-    {
-        id: 2,
-        name: "SashaLead",
-        dept_unit_id: 1,
-        tel: "123-123-3", 
-        salary: 2200
-    },
-    {
-        id: 3,
-        name: "MirraDev",
-        dept_unit_id: 2,
-        tel: "123-123-3",
-        salary: 1200
-    },
-    {
-        id: 4,
-        name: "IraDev",
-        dept_unit_id: 2,
-        tel: "123-123-3",
-        salary: 1000
-    },
-    {
-        id: 5,
-        name: "DanikHead3",
-        dept_unit_id: 3,
-        tel: "123-123-33",
-        salary: 3000
-    },
-    {
-        id: 7,
-        name: "KoliaLead",
-        dept_unit_id: 4,
-        tel: "123-123-3",
-        salary: 2000
-    },
-    {
-        id: 6,
-        name: "OliaLead3",
-        dept_unit_id: 4,
-        tel: "123-123-3",
-        salary: 2200
-    },
-    {
-        id: 9,
-        name: "SienaTest",
-        dept_unit_id: 5,
-        tel: "123-123-3",
-        salary: 1000
-    },
-{
-        id: 8,
-        name: "LenaTest",
-        dept_unit_id: 5,
-        tel: "123-123-3",
-        salary: 1200
-    }
-];
+//         id: 0,
+//         name: "YarikHead",
+//         dept_unit_id: 0,
+//         tel: "123-123-3", 
+//         salary: 3000
+//     },
+//     {
+//         id: 1,
+//         name: "MashaLead",
+//         dept_unit_id: 1,
+//         tel: "123-123-3", 
+//         salary: 2000
+//     },
+//     {
+//         id: 2,
+//         name: "SashaLead",
+//         dept_unit_id: 1,
+//         tel: "123-123-3", 
+//         salary: 2200
+//     },
+    
+//     {
+//         id: 3,
+//         name: "MirraDev",
+//         dept_unit_id: 2,
+//         tel: "123-123-3",
+//         salary: 1200
+//     },
+
+//     {
+//         id: 4,
+//         name: "IraDev",
+//         dept_unit_id: 2,
+//         tel: "123-123-3",
+//         salary: 1000
+//     },
+
+//     {
+//         id: 5,
+//         name: "DanikHead3",
+//         dept_unit_id: 3,
+//         tel: "123-123-33",
+//         salary: 3000
+//     },
+
+//     {
+//         id: 7,
+//         name: "KoliaLead",
+//         dept_unit_id: 4,
+//         tel: "123-123-3",
+//         salary: 2000
+//     },
+
+//     {
+//         id: 6,
+//         name: "OliaLead3",
+//         dept_unit_id: 4,
+//         tel: "123-123-3",
+//         salary: 2200
+//     },
+    
+//     {
+//         id: 9,
+//         name: "SienaTest",
+//         dept_unit_id: 5,
+//         tel: "123-123-3",
+//         salary: 1000
+//     },
+
+//     {
+//         id: 8,
+//         name: "LenaTest",
+//         dept_unit_id: 5,
+//         tel: "123-123-3",
+//         salary: 1200
+//     }
+// ];
 
 const depts = [
 // let developer = 
@@ -227,12 +234,23 @@ function getDepartmentId(departmentName) {
 }
 
 function getArrayDepartmentEmpls(departmentId) {
+    
     return employeers.filter(function(employeer) {
         if (employeer.dept_unit_id === departmentId ) {
             return employeer;
         }
     });
 }
+
+// function getFromServerEmloyees(){
+//     fetch('http://localhost:8090/0_department.json')
+//         .then((res) => console.log('pfghjc' + res.json()))
+//         .then((result) => {
+//             console.log('работники' + result);
+//         });
+// };
+
+// getFromServerEmloyees();
 
 const listDept = document.getElementsByTagName ('li');
 document.addEventListener('click', function(event) {
@@ -280,7 +298,6 @@ btnCleanOut.addEventListener('click', function(event) {
 // titleElem.addEventListener('click', function(event) {
 //     htmlTreeParent.classList.add('open');
 // });
-
 
 
 
